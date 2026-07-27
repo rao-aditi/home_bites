@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Home from "@/pages/index";
+import Home from "@/pages/home/index";
 import RestaurantsPage from "@/pages/restaurants";
 import RestaurantDetailPage from "@/pages/restaurants.$id";
 import FoodDetailPage from "@/pages/food.$id";
@@ -8,8 +8,8 @@ import OffersPage from "@/pages/offers";
 import CartPage from "@/pages/cart";
 import CheckoutPage from "@/pages/checkout";
 import PaymentPage from "@/pages/payment";
-import OrdersPage from "@/pages/orders";
-import OrderDetailPage from "@/pages/orders.$id";
+import OrdersPage from "@/pages/order/orders";
+import OrderDetailPage from "@/pages/order/orders.$id";
 import ProfilePage from "@/pages/profile";
 import WishlistPage from "@/pages/wishlist";
 import NotificationsPage from "@/pages/notifications";
@@ -17,7 +17,7 @@ import SearchPage from "@/pages/search";
 import AboutPage from "@/pages/about";
 import HelpPage from "@/pages/help";
 import ContactPage from "@/pages/contact";
-import OrderSuccessPage from "@/pages/order-success";
+import OrderSuccessPage from "@/pages/order/order-success";
 
 export default function AppRoutes() {
   return (

@@ -1,19 +1,13 @@
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiSearch, FiMic, FiArrowRight, FiStar, FiClock, FiShield, FiTruck } from "react-icons/fi";
-import { restaurants, foods, categories, offers, testimonials, faqs } from "@/data/mockData";
+import { restaurants, foods, categories, offers, testimonials, faqs } from "../../data/mockData";
 import { RestaurantCard } from "@/components/cards/RestaurantCard";
 import { FoodCard } from "@/components/cards/FoodCard";
 import { useApp } from "@/context/AppContext";
 import { useState } from "react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { AiFillFire } from "react-icons/ai";
-import FAQ from "./faq/FAQ";
+import FAQ from "../faq/FAQ";
 
 function Section({ title, cta, to, children }) {
   return (
